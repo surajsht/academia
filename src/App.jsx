@@ -1,9 +1,9 @@
 import React from "react"
-import Header from "./components/header/Header"
+import Hero from "./components/hero/Hero"
 import "./index.css"
 
 const App = () => {
-  return <Header />
+  return <Hero />
 }
 
 export default App
