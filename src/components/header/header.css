@@ -1,0 +1,135 @@
+/* topbar  */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+
+.topbar-right .social-links {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .topbar-right .social-links {
+    display: none;
+  }
+}
+
+.topbar-right .social-links li:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.topbar-right .social-links li svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.offcanvas-icons svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .offcanvas-icons {
+    display: none;
+  }
+}
+
+.logo {
+  font-size: var(--font-size-medium);
+  line-height: car(var(--font-size-medium) * var(--line-height-title));
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.logo-desc {
+  font-size: var(--font-size-small);
+}
+
+/* top navbar  */
+
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .top-navbar {
+    display: none;
+  }
+}
+
+.navbar-item-center {
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links li {
+  font-size: var(--font-size-xsmall);
+  text-transform: capitalize;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+/* offcanvas menu  */
+
+@media (min-width: 992px) {
+  .offcanvas-menu {
+    display: none;
+  }
+}
+
+.offcanvas-menu {
+  --offcanvas-menu-width: 24rem;
+
+  position: absolute;
+  top: 0;
+  left: calc(var(--offcanvas-menu-width) * -1);
+  background-color: #cecece;
+  height: 100vh;
+  width: var(--offcanvas-menu-width);
+  padding: 2.4rem;
+  transition: 0.4s ease;
+}
+
+.offcanvas-menu.active {
+  left: 0;
+}
+
+.offcanvas-nav-links {
+  margin-top: 4rem;
+}
+
+.offcanvas-nav-links li:not(:first-child) {
+  margin-top: 1.6rem;
+}
+
+.offcanvas-nav-links li {
+  font-size: var(--font-size-xsmall);
+  text-transform: capitalize;
+}
+
+.offcanvas-icon-close {
+  position: absolute;
+  top: 1.6rem;
+  right: 2.4rem;
+}
+
+.offcanvas-icon-close svg {
+  height: 3.2rem;
+  width: 3.2rem;
+  cursor: pointer;
+}
