@@ -33,7 +33,7 @@ li {
   /* font size  */
 
   --font-size-base: 1.6rem;
-  --font-size-large: 5.9rem;
+  --font-size-large: 6.1rem;
   --font-size-big: 3.9rem;
   --font-size-medium: 3.1rem;
   --font-size-small: 2.5rem;
@@ -66,9 +66,21 @@ li {
   --primary-color: #1eb2a6;
 }
 
+@media (max-width: 1600px) {
+  :root {
+    --wrapper: 1320px;
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --wrapper: 1140px;
+  }
+}
+
 @media (max-width: 1199px) {
   :root {
-    --wrapper: calc(100% - 8%);
+    --wrapper: 960px;
 
     /* column  */
 
@@ -135,9 +147,19 @@ li {
   }
 }
 
+@media (max-width: 767px) {
+  :root {
+    --wrapper: 540px;
+
+    /* font size  */
+
+    --font-size-large: 4.8rem;
+  }
+}
+
 @media (max-width: 575px) {
   :root {
-    --wrapper: 536px;
+    --wrapper: 100%;
 
     /* column  */
 
@@ -157,6 +179,7 @@ li {
     /* font size  */
 
     --font-size-large: 3.1rem;
+    --font-size-small: 2rem;
   }
 }
 
@@ -680,29 +703,56 @@ body {
   line-height: calc(var(--font-size-xsmall) * var(--line-height-title));
 }
 
-.theme-btn {
-  border: 0;
-  outline: 0;
-  text-transform: capitalize;
-  font-size: var(--font-size-xsmall);
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 0.8rem 1.6rem;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-/* primary btn  */
-
-.theme-primary-btn {
-  border: none;
+button {
   outline: none;
-  background-color: var(--primary-color);
   display: inline-block;
   min-height: 3.2rem;
   min-width: 12rem;
   color: #fff;
   text-transform: capitalize;
-  font-size: var(--font-size-xsmall);
+  font-size: var(--font-size-base);
   padding: 0.8rem 1.6rem;
+  font-weight: var(--font-weight-semiBold);
+}
+
+@media (max-width: 575px) {
+  button {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* primary btn  */
+
+.theme-primary-btn {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.theme-secondary-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-left: 1.6rem;
+}
+
+@media (max-width: 575px) {
+  .theme-secondary-btn {
+    margin-left: 0.8rem;
+  }
+}
+
+.hero-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn-has-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-has-icon svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: 1.6rem;
 }
