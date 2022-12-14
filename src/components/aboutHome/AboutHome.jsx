@@ -1,6 +1,7 @@
 import AboutImg from "./img/about.jpg"
 import AboutHomeData from "./AboutHomeData"
 import AboutHomeItem from "./AboutHomeItem"
+import SectionHeader from "../section-header/SectionHeader"
 import './aboutHome.css'
 
 const AboutHome = () => {
@@ -8,6 +9,12 @@ const AboutHome = () => {
     <div className="about-home">
       <div className="container">
         <div className="row">
+          <div className="column column-12">
+            <SectionHeader 
+            category = 'category'
+            title = 'this is demo category'
+             />
+          </div>
           <div className="column column-6 column-sm-12">
             <img src={AboutImg} alt="" />
           </div>

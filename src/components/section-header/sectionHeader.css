@@ -1,0 +1,17 @@
+.header-category {
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+.theme-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5.6rem;
+}
+
+.header-title {
+    text-transform: capitalize;
+}

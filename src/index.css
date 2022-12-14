@@ -702,7 +702,6 @@ body {
 .font-size-xsmall {
   font-size: var(--font-size-xsmall);
   line-height: calc(var(--font-size-xsmall) * var(--line-height-title));
-  font-weight: var(--font-weight-medium);
 }
 
 button {

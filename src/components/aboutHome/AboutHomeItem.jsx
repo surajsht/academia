@@ -8,7 +8,7 @@ const AboutHomeItem = ({ data }) => {
 
       <div className="about-home-content">
         <h2 className="entry-title font-size-small">{title}</h2>
-        <p className = 'font-size-xsmall'> {info} </p>
+        <p> {info} </p>
       </div>
     </div>
   )

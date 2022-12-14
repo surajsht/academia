@@ -19,6 +19,11 @@
   padding: 0 0 0 3.2rem;
 }
 
+.about-home-item p {
+  font-size: var(--font-size-xsmall);
+  line-height: calc(var(--font-size-xsmall) * var(--line-height-title));
+}
+
 .about-home-item img {
   height: auto;
 }
