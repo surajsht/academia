@@ -5,7 +5,7 @@ import { TbArrowNarrowRight } from "react-icons/tb"
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero theme-block">
       <Header />
       <div className="hero-content">
         <h2 className="entry-title font-size-small"> welcome to academia </h2>

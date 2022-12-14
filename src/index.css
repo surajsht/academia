@@ -8,6 +8,10 @@ li {
   list-style: none;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
 :root {
   --wrapper: 1664px;
 
@@ -99,16 +103,12 @@ li {
 
     /* font size  */
 
-    --font-size-big: 7.2rem;
+    --font-size-big: 3.1rem;
   }
 }
 
 @media (max-width: 1024px) {
   :root {
-    /* font size  */
-
-    --font-size-big: 5.6rem;
-
     /* column  */
 
     --column-md-1: 8.333333%;
@@ -696,11 +696,13 @@ body {
 .font-size-small {
   font-size: var(--font-size-small);
   line-height: calc(var(--font-size-small) * var(--line-height-title));
+  font-weight: var(--font-weight-semiBold);
 }
 
 .font-size-xsmall {
   font-size: var(--font-size-xsmall);
   line-height: calc(var(--font-size-xsmall) * var(--line-height-title));
+  font-weight: var(--font-weight-medium);
 }
 
 button {
@@ -755,4 +757,17 @@ button {
   height: 2.4rem;
   width: 2.4rem;
   margin-left: 1.6rem;
+}
+
+/* image  */
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+/* global section space  */
+
+.theme-block {
+  margin-bottom: 8rem;
 }

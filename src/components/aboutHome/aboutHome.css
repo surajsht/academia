@@ -1,0 +1,43 @@
+.about-home-item {
+  --about-home-icon: 6rem;
+
+  display: flex;
+  background-color: #fff;
+  padding: 1.6rem;
+}
+
+.about-home-item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.about-home-item .about-home-icon {
+  width: var(--about-home-icon);
+}
+
+.about-home-item .about-home-content {
+  width: calc(100% - var(--about-home-icon));
+  padding: 0 0 0 3.2rem;
+}
+
+.about-home-item img {
+  height: auto;
+}
+
+.about-home-item .entry-title {
+  margin-bottom: 0.8rem;
+}
+
+.about-home .column > .entry-title:first-of-type,
+.about-home .column > .entry-title:first-of-type + .entry-title {
+  margin-bottom: 1.6rem;
+}
+
+.about-home .column > .entry-title:first-of-type {
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .about-home .row:first-of-type > .column:first-child {
+    margin-bottom: 2.4rem;
+  }
+}
