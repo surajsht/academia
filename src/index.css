@@ -714,6 +714,7 @@ button {
   font-size: var(--font-size-base);
   padding: 0.8rem 1.6rem;
   font-weight: var(--font-weight-semiBold);
+  cursor: pointer;
 }
 
 @media (max-width: 575px) {

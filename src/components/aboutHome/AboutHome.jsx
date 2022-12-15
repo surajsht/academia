@@ -6,7 +6,7 @@ import './aboutHome.css'
 
 const AboutHome = () => {
   return (
-    <div className="about-home">
+    <div className="about-home theme-block">
       <div className="container">
         <div className="row">
           <div className="column column-6 column-sm-12">
